@@ -1,0 +1,1086 @@
+/*CSS document*/
+
+* {
+
+    box-sizing: border-box;
+    font-family: Futura;
+    font-style: medium;
+    font-weight: 100;
+}
+
+body {
+
+    margin: auto;
+    padding: 0%;
+}
+
+
+
+.box {
+    float: left;
+    width: 33.33%;
+    /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 50px;
+    /* if you want space between the images */
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.logo {
+
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+
+
+}
+
+.logo img {
+
+    display: flex;
+    width: 25%;
+    padding-top: 3%;
+    position: absolute;
+
+
+
+
+
+
+}
+
+/* burgermenu ------------------------- */
+
+#logo-burger-main {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+
+
+
+}
+
+
+
+#main-nav {
+
+
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+
+    z-index: 1;
+
+
+}
+
+
+#logo-burger-main label {
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+    padding-right: 1%;
+
+
+}
+
+
+
+#toggle:checked + #main-nav {
+    display: block;
+    position: absolute;
+    padding: 0;
+
+
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+#main-nav li {}
+
+
+#main-nav a {
+
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 120%;
+    text-decoration: none;
+    background-color: #a54657;
+    padding: 3%;
+    border: 1px solid #8c2f39;
+
+
+}
+
+
+#main-nav li:last-of-type {
+    border-bottom: none;
+}
+
+/* burgermenu slut ------------------------- */
+
+
+.main-img img {
+
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+
+}
+
+.line-break {
+
+    border-bottom: 1px solid #8c2f39;
+    width: 80px;
+    margin: 0 auto;
+}
+
+
+
+
+/* containers ------------------- */
+
+.article-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.section-box,
+.section-box-recipe {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+}
+
+.section-box,
+.section-box-recipe > h1 {
+
+    font-size: 60%;
+    color: #707070;
+
+}
+
+.section-box-product > h1 {
+
+    font-size: 90%;
+    color: #707070;
+
+}
+
+.section-box > a {
+
+    width: 60%;
+}
+
+
+
+.section-box > a > h2 {
+    font-size: 11px;
+    color: white;
+    padding: 1%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a54657;
+    opacity: 0.8;
+    border-radius: 5px;
+
+}
+
+.section-box > a > h2:hover {
+
+    border: 2px solid white;
+
+}
+
+
+
+.section-box3 {
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.section-box3 img {
+    width: 50%;
+    padding: 5%;
+
+
+
+}
+
+.article-row2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #A54657;
+    width: 96%;
+    height: 100%;
+    margin-top: 3%;
+    padding-bottom: 1%;
+    padding-top: %;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+
+
+.section-box,
+.section-box2,
+.section-box-product > p {
+    font-size: 70%;
+    color: #707070;
+
+}
+
+
+
+.section-box-product {
+
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    
+
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+}
+
+
+.section-box-product > a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+
+
+}
+
+
+.section-box-product > h1 {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        
+}
+
+
+
+
+
+
+.section-box img,
+.section-box-product img {
+    width: 100%;
+    height: 90%;
+    padding: 1%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+
+}
+
+
+
+.section-box-product img:hover {
+    opacity: 0.2;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+
+
+}
+
+/* containers slut ------------------- */
+
+
+/* hover funktion start */
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.section-box-product:hover .image {
+    opacity: 0.3;
+}
+
+.section-box-product:hover .middle {
+    opacity: 1;
+
+}
+
+.text {
+
+    //color: aqua;
+    font-size: 16px;
+    padding: 2%;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #707070;
+}
+
+/* hover funktion slut */
+
+
+
+
+/* bagetip start ---------------------------- */
+
+
+.section-box-bedste-bagetips {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border: 1px solid #A54657;
+    color: #707070;
+
+
+}
+
+.section-box-bedste-bagetips > h1 {
+    font-size: 120%;
+    color: #707070;
+
+
+}
+
+.section-box-bedste-bagetips > p {
+
+    font-size: 70%;
+    color: #707070;
+}
+
+
+
+/* bagetip slut ----------------------- */
+
+
+/* produkter.html start ------------------*/
+
+.product {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    color: #707070;
+}
+
+.product-content {
+
+    color: #707070;
+    font-size: 10px;
+    padding: 4%;
+
+}
+
+.product-content > p {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.article-product {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+
+    width: 100%;
+    padding: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.product-content-seflere {
+
+    display: flex;
+    justify-content: center;
+    font-size: 6px;
+    color: #707070;
+    padding: 2%;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+/* produkter.html slut ------------------*/
+
+
+/* opskrifter.html start ---------------*/
+
+.article-recipe {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.bbb-content {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E2E2;
+
+
+
+}
+
+.bbb-content > h1 {
+
+
+    padding: 20px;
+    color: #888888;
+    font-size: 15px;
+
+}
+
+
+.article-column {
+    display: flex;
+
+    justify-content: center;
+
+
+    width: 100%;
+}
+
+
+.section-recipe {
+
+
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    padding: 2%;
+    background-color: #E5E2E2;
+    border: 1px solid #8c2f39;
+
+}
+
+
+
+.section-recipe > h1 {
+
+    display: flex;
+    justify-content: center;
+    color: #707070;
+    padding-top: 20px;
+    font-size: 15px;
+
+}
+
+.section-recipe > p {
+
+    color: #707070;
+    padding-bottom: 20px;
+    font-size: 10px;
+
+}
+
+/* opskrifter.html stop ---------------*/
+
+
+/*footer -----------------*/
+
+
+
+
+
+.footer-container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin-top: 5%;
+    padding-top: 1%;
+    background-color: #848484;
+
+}
+
+.footer-content  {
+    
+     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    color: white;
+
+}
+
+.footer-container img {
+    
+       width: 11%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  
+}
+
+
+
+    
+
+
+    
+
+
+
+/*footer slut  -----------------*/
+
+
+
+/**********************************************/
+/*MEDIA QUERY TABLET AND ABOVE*/
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+
+    #logo-burger-main {
+        display: none;
+        margin: 0;
+    }
+
+    header > nav {
+
+        display: flex;
+        justify-content: flex-end;
+
+
+    }
+
+
+    #main-nav {
+        display: flex;
+        margin-right: .5em;
+        list-style: none;
+        justify-content: flex-end;
+
+        width: 85%;
+        background: none;
+
+
+
+
+    }
+
+    #main-nav a {
+
+        margin-left: 1em;
+        margin-right: 1em;
+        line-height: 1.4em;
+        padding-bottom: 0%;
+        font-size: 100%;
+        padding: 5px;
+        background: none;
+        border: none;
+        color: #707070;
+
+
+
+
+
+
+    }
+
+
+
+    .logo {
+
+        justify-content: flex-start;
+        padding-top: 2%;
+        padding-bottom: 0;
+
+
+
+
+    }
+
+    .logo img {
+
+        width: 13%;
+        padding: 0;
+    }
+
+
+    .section-box > a {
+
+        width: 40%;
+    }
+
+
+
+    .section-box > a > h2 {
+        font-size: 10px;
+
+
+    }
+
+
+
+
+    .article-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        width: 100%;
+        height: 100%;
+        padding: 1%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+
+    .section-box-bedste-bagetips {
+
+        height: 10px;
+        padding: 1%;
+        padding-bottom: 30%;
+
+
+    }
+
+
+
+    .article-row2 {
+
+        flex-direction: row;
+        align-items: center;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 1%;
+
+    }
+
+
+    .article-product {
+
+        flex-direction: row;
+        float: left;
+        align-items: flex-start;
+        width: 50%;
+        padding: 0%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+    #products > p {
+
+        padding-left: 0%;
+
+
+    }
+
+    .article-recipe {
+
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 4%;
+        padding-bottom: 1%;
+        padding-top: 5%;
+
+    }
+
+
+
+    .section-recipe {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        background-color: #E5E2E2;
+        border: 1px solid #8c2f39;
+
+    }
+
+    .section-recipe > h1 {
+        display: flex;
+        justify-content: center;
+        color: #707070;
+        padding-top: 20px;
+        font-size: 35px;
+
+    }
+
+    .section-recipe > p {
+        color: #707070;
+        padding-bottom: 20px;
+        font-size: 15px;
+
+    }
+
+
+    .footer-container {
+   
+
+    flex-direction: row;
+        padding: 0;
+
+   
+  
+
+
+}
+
+.footer-content  {
+    
+
+    font-size: 10px;
+ 
+
+}
+    
+    .footer-container img {
+        
+        width: 15%;
+        padding-top: 8%;
+     
+    
+  
+  
+}
+
+
+
+}
+
+/**********************************************/
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+@media all and (min-width: 1024px) {
+
+
+    #logo-burger-main {
+        display: none;
+        margin: 0;
+    }
+
+
+    header > nav {
+
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+
+    #main-nav {
+        display: flex;
+        margin-right: .5em;
+        list-style: none;
+        justify-content: center;
+        width: 65%;
+        padding-top: 2%;
+        background: none;
+
+
+
+
+
+    }
+
+
+
+    #main-nav a {
+
+        margin-left: 2em;
+        margin-right: 2em;
+        line-height: 1.4em;
+        padding-bottom: 0%;
+        font-size: 100%;
+        padding: 10px;
+        background: none;
+        border: none;
+        color: #707070;
+    }
+
+
+    .section-box > a {
+
+        width: 30%;
+    }
+
+
+
+    .section-box > a > h2 {
+        font-size: 10px;
+
+
+    }
+
+
+    .logo {
+
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-bottom: 0%;
+
+
+
+    }
+
+    .logo img {
+
+        width: 11%;
+        padding: 0;
+
+    }
+
+
+    .article-row {
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .section-box-bedste-bagetips {
+
+        display: flex;
+        flex: 1;
+        flex-direction: center;
+
+
+        width: 100%;
+        padding: 3%;
+
+        border-style: solid;
+        border-color: #A54657;
+        color: #707070;
+
+    }
+
+    .article-row2 {
+
+        flex-direction: row;
+        align-items: center;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 1%;
+
+
+    }
+
+    .article-product {
+
+
+        flex-direction: row;
+        float: left;
+        align-items: flex-start;
+        width: 50%;
+        padding: 0%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+    .article-product img {
+
+        width: 80%;
+
+    }
+
+    #products > p {
+
+        padding-left: 0%;
+
+
+    }
+
+    .article-recipe {
+
+
+        flex-direction: row;
+        width: 100%;
+        padding: 10%;
+        padding-bottom: 1%;
+        padding-top: 5%;
+
+    }
+
+
+    .bbb-content > h1 {
+
+
+        padding: 40px;
+        color: #888888;
+        font-size: 25px;
+
+    }
+
+
+    .article-column {
+        display: flex;
+
+        justify-content: flex-start;
+
+
+        width: 100%;
+    }
+
+    .section-recipe {
+
+
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        background-color: #E5E2E2;
+        border: 1px solid #8c2f39;
+
+
+
+
+    }
+
+    .section-recipe > h1 {
+
+        display: flex;
+        justify-content: center;
+        color: #707070;
+        padding-top: 20px;
+        font-size: 35px;
+
+    }
+
+    .section-recipe > p {
+
+        color: #707070;
+        padding-bottom: 20px;
+        font-size: 15px;
+
+    }
+
+    .footer-container {
+   
+
+    flex-direction: row;
+        padding: 0;
+
+   
+  
+
+
+}
+
+.footer-content  {
+    
+
+    font-size: 12px;
+ 
+
+}
+    
+    .footer-container img {
+    width: 13%;
+        
+  
+  
+}
+
+
+}
